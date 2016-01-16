@@ -6,10 +6,155 @@
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title>
-    </title>
+    <title>Vacation Selector</title>
   </head>
   <body>
+    <div class="container-fluid">
+      <div class="page-header" id="header">
+        <h1>Vacation Location Selector</h1>
+        <h3>Answer the questions below to find your vacation paradise!</h3>
+      </div>
+
+      <form name="user-questions">
+        <div class="row">
+          <div class="col-sm-12">
+            <h4>Choose the type of place!</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <label class="radio-inline">
+                <input type="radio" name="environs" checked="checked">Mountains
+            </label>
+          </div>
+          <div class="col-sm-3">
+            <label class="radio-inline">
+              <input type="radio" name="environs">Beaches
+            </label>
+          </div>
+          <div class="col-sm-3">
+            <label class="radio-inline">
+              <input type="radio" name="environs">Historical
+            </label>
+          </div>
+          <div class="col-sm-3">
+          </div>
+        </div> <!-- end row -->
+
+        <div class="row">
+          <div class="col-sm-12">
+            <h4>When will you be going?</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <label class="radio-inline">
+              <input type="radio" name="season" checked="checked">Fall
+            </label>
+          </div>
+          <div class="col-sm-3">
+            <label class="radio-inline">
+              <input type="radio" name="season">Winter
+            </label>
+          </div>
+          <div class="col-sm-3">
+            <label class="radio-inline">
+              <input type="radio" name="season">Summer/Spring
+            </label>
+          </div>
+          <div class="col-sm-3">
+          </div>
+        </div> <!-- end of row div -->
+        <div class="row">
+          <div class="col-sm-12">
+            <h4>Choose your preferred activities!</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <label class="radio-inline">
+              <input type="radio" name="activities" checked="checked">Museums
+            </label>
+          </div>
+        <div class="col-sm-3">
+          <label class="radio-inline">
+            <input type="radio" name="activities">Skiing
+          </label>
+        </div>
+        <div class="col-sm-3">
+          <label class="radio-inline">
+            <input type="radio" name="activities">Hiking/Kayaking
+          </label>
+        </div>
+        </div> <!-- end of row div -->
+        <div class="row">
+          <div class="col-sm-12">
+            <h4>What is your budget?</h4>
+          </div>
+        </div> <!-- end of row 12 div -->
+        <div class="row">
+          <div class="col-sm-3">
+            <label class="radio-inline">
+              <input type="radio" name="budget" checked="checked">&lt $1500
+            </label>
+          </div>
+          <div class="col-sm-3">
+            <label class="radio-inline">
+              <input type="radio" name="budget">$1500 - $2500
+            </label>
+          </div>
+          <div class="col-sm-3">
+            <label class="radio-inline">
+              <input type="radio" name="budget">&gt $2500.00
+            </label>
+          </div>
+          <div class="col-sm-3">
+          </div>
+        </div> <!-- end of row 6 div -->
+        <div class="row">
+          <div class="col-sm-12">
+            <h4>Choose an activity level</h4>
+          </div>
+        </div> <!-- end of row 12 div -->
+
+        <div class="row">
+          <div class="col-sm-3">
+            <label class="radio-inline">
+              <input type="radio" name="activity-level" checked="checked">Low
+            </label>        </div>
+          <div class="col-sm-3">
+            <label class="radio-inline">
+              <input type="radio" name="activity-level">Moderate
+            </label>
+          </div>
+          <div class="col-sm-3">
+            <label class="radio-inline">
+              <input type="radio" name="activity-level">High
+            </label>
+          </div>
+          <div class="col-sm-3">
+          </div>
+        </div> <!-- end of row 6 div -->
+        <div class="row">
+          <div class="col-sm-9 button-div">
+              <input type="submit" class="center-block" onclick="findParadise()">
+          </div>
+          <div class="col-sm-3">
+          </div>
+        </div>
+      </form>
+    </div> <!-- end form container div -->
+
+
+    <div class="container-fluid img-container">
+      <div class="row">
+        <div class="col-sm-12">
+          <img src="images/honolulu.jpg" alt="A photo of Honolulu" id="img-honolulu" class="img-responsive img-hide"></img>
+          <img src="images/rome.jpg" alt="A photo of Rome" id="img-rome" class="img-responsive img-hide"></img>
+          <img src="images/aspen.jpg" alt="A photo of Aspen" id="img-aspen" class="img-responsive img-hide"></img>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>

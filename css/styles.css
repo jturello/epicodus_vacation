@@ -1,0 +1,46 @@
+.page-header {
+  color: lemonchiffon;
+  border:1px solid #2b4f6e;
+  text-align: center;
+  background-image: url("../images/palm-trees.jpg");
+  background-size: cover;
+  /*background-repeat: no-repeat;*/
+  background-
+  background-color: lightgrey;
+}
+
+body {
+  background-color: cornsilk;
+}
+
+form h4, label {
+  color: #4d6fb3;
+}
+
+.img-container {
+  padding-top: 20px;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.img-hide {
+  visibility: hidden;
+}
+
+/*.img-show {
+  visibility: visible;
+}*/
+
+.button-div {
+  padding-top: 15px;
+}
+
+input {
+  width: 100%;
+  background-color: lightcoral;
+  color: white;
+  font-weight: lemonchiffon;
+  font-size: 18px;
+}
