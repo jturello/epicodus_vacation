@@ -15,7 +15,7 @@
         <h3>Answer the questions below to find your vacation paradise!</h3>
       </div>
 
-      <form name="user-questions">
+      <form name="radiosForm" id="radios">
         <div class="row">
           <div class="col-sm-12">
             <h4>Choose the type of place!</h4>
@@ -24,17 +24,17 @@
         <div class="row">
           <div class="col-sm-3">
             <label class="radio-inline">
-                <input type="radio" name="environs" checked="checked">Mountains
+                <input type="radio" name="environs" value="Mountains" checked="checked">Mountains</input>
             </label>
           </div>
           <div class="col-sm-3">
             <label class="radio-inline">
-              <input type="radio" name="environs">Beaches
+              <input type="radio" name="environs" value="Beaches">Beaches
             </label>
           </div>
           <div class="col-sm-3">
             <label class="radio-inline">
-              <input type="radio" name="environs">Historical
+              <input type="radio" name="environs" value="History">History
             </label>
           </div>
           <div class="col-sm-3">
@@ -49,17 +49,17 @@
         <div class="row">
           <div class="col-sm-3">
             <label class="radio-inline">
-              <input type="radio" name="season" checked="checked">Fall
+              <input type="radio" name="season" value="Winter" checked="checked">Winter
             </label>
           </div>
           <div class="col-sm-3">
             <label class="radio-inline">
-              <input type="radio" name="season">Winter
+              <input type="radio" name="season" value="Spring/Summer">Spring/Summer
             </label>
           </div>
           <div class="col-sm-3">
             <label class="radio-inline">
-              <input type="radio" name="season">Summer/Spring
+              <input type="radio" name="season" value="Fall">Fall
             </label>
           </div>
           <div class="col-sm-3">
@@ -73,17 +73,17 @@
         <div class="row">
           <div class="col-sm-3">
             <label class="radio-inline">
-              <input type="radio" name="activities" checked="checked">Museums
+              <input type="radio" name="activities" value="Skiing" checked="checked">Skiing
             </label>
           </div>
         <div class="col-sm-3">
           <label class="radio-inline">
-            <input type="radio" name="activities">Skiing
+            <input type="radio" name="activities" value="Hiking/Kayaking">Hiking/Kayaking
           </label>
         </div>
         <div class="col-sm-3">
           <label class="radio-inline">
-            <input type="radio" name="activities">Hiking/Kayaking
+            <input type="radio" name="activities" value="Museums">Museums
           </label>
         </div>
         </div> <!-- end of row div -->
@@ -95,17 +95,17 @@
         <div class="row">
           <div class="col-sm-3">
             <label class="radio-inline">
-              <input type="radio" name="budget" checked="checked">&lt $1500
+              <input type="radio" name="budget" value="$1500 - $2500" checked="checked">$1500 - $2500
             </label>
           </div>
           <div class="col-sm-3">
             <label class="radio-inline">
-              <input type="radio" name="budget">$1500 - $2500
+              <input type="radio" name="budget" value="< $1500">&lt $1500
             </label>
           </div>
           <div class="col-sm-3">
             <label class="radio-inline">
-              <input type="radio" name="budget">&gt $2500.00
+              <input type="radio" name="budget" value="> $2500">&gt $2500.00
             </label>
           </div>
           <div class="col-sm-3">
@@ -115,29 +115,27 @@
           <div class="col-sm-12">
             <h4>Choose an activity level</h4>
           </div>
-        </div> <!-- end of row 12 div -->
-
+        </div>
         <div class="row">
           <div class="col-sm-3">
-            <label class="radio-inline">
-              <input type="radio" name="activity-level" checked="checked">Low
-            </label>        </div>
+              <label class="radio-inline">
+                <input type="radio" name="activity-level" value="High" checked="checked">High
+              </label>
+            </div>
           <div class="col-sm-3">
             <label class="radio-inline">
-              <input type="radio" name="activity-level">Moderate
+              <input type="radio" name="activity-level" value="Moderate">Moderate
             </label>
           </div>
           <div class="col-sm-3">
             <label class="radio-inline">
-              <input type="radio" name="activity-level">High
+              <input type="radio" name="activity-level" value="Low">Low
             </label>
-          </div>
-          <div class="col-sm-3">
           </div>
         </div> <!-- end of row 6 div -->
         <div class="row">
           <div class="col-sm-9 button-div">
-              <input type="submit" class="center-block" onclick="findParadise()">
+              <button class="btn" id="submit-btn">Submit</button>
           </div>
           <div class="col-sm-3">
           </div>
@@ -149,12 +147,20 @@
     <div class="container-fluid img-container">
       <div class="row">
         <div class="col-sm-12">
-          <img src="images/honolulu.jpg" alt="A photo of Honolulu" id="img-honolulu" class="img-responsive img-hide"></img>
-          <img src="images/rome.jpg" alt="A photo of Rome" id="img-rome" class="img-responsive img-hide"></img>
-          <img src="images/aspen.jpg" alt="A photo of Aspen" id="img-aspen" class="img-responsive img-hide"></img>
+          <div id="img-honolulu" class="img-hide">
+            <h3>Book your tickets for Honolulu!</h3>
+            <img src="images/honolulu.jpg" alt="A photo of Honolulu" class="img-responsive"></img>
+          </div>
+          <div id="img-rome"  class="img-hide">
+            <h3>Book your tickets for Rome!</h3>
+            <img src="images/rome.jpg" alt="A photo of Rome" class="img-responsive"></img>
+          </div>
+          <div id="img-aspen" class="img-hide">
+            <h3>Book your tickets for Aspen!</h3>
+            <img src="images/aspen.jpg" alt="A photo of Aspen" class="img-responsive"></img>
+          </div>
         </div>
       </div>
     </div>
-
   </body>
 </html>

@@ -4,7 +4,6 @@
   text-align: center;
   background-image: url("../images/palm-trees.jpg");
   background-size: cover;
-  /*background-repeat: no-repeat;*/
   background-
   background-color: lightgrey;
 }
@@ -23,24 +22,30 @@ form h4, label {
 
 .img-container img {
   width: 100%;
+  border: 1px solid black;
+}
+
+.img-container h3 {
+  color: red;
 }
 
 .img-hide {
+  display: none;
   visibility: hidden;
 }
 
-/*.img-show {
+.img-show {
+  display: block;
   visibility: visible;
-}*/
+}
 
 .button-div {
   padding-top: 15px;
 }
 
-input {
+#submit-btn {
   width: 100%;
   background-color: lightcoral;
-  color: white;
-  font-weight: lemonchiffon;
-  font-size: 18px;
+  color: LightGoldenRodYellow;
+  font-size: 20px;
 }
